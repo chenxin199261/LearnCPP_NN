@@ -1,0 +1,14 @@
+ # Running type  1: Training+inference 2: only inference
+type 1
+
+  # Number of layers,Maxinum=200
+nlayers       5
+
+ # Number of neurons per layer
+neuronslayer  5 5 5 5 5
+
+  # Debug level, 0:no print, 1:basic info. 2: detailed.
+debug 1
+
+  # Name of parameter files for type =2
+parafile cc.param
