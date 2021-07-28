@@ -19,7 +19,6 @@ string trimStr(string str){
     return regex_replace(str, regex("(^[ ]+)|([ ]+$)"),"");
 }
 
-
 /**
  * @brief stringTools: trim string
  * @author Xin Chen
@@ -42,7 +41,7 @@ vector<string>  splitStr(const string& str,const string& delim) {
 
  
     for (int i = 0; i < size; ++i) {
-        pos = strs.find(delim, i);
+        pos = strs.find(delim, i); 
         if(strs[i] == ' ') continue; 
         if( pos < size) { 
             string s = strs.substr(i, pos - i);
