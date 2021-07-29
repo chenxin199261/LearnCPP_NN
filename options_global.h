@@ -15,11 +15,11 @@
 
 
 using namespace std;
-int runType = 1;                // Program run-type 1: Train+inference
-int debugLv = 0;                // Debug level
+short unsigned int runType = 1;                // Program run-type 1: Train+inference
+short unsigned int debugLv = 0;                // Debug level
 
-int nLayer = 5;                 // number of layers
-int neuPerlayer[maxLayer] = {5,5,5,5,5}; // number of neurons per layer
+short unsigned int nLayer = 5;                 // number of layers
+short unsigned int neuPerlayer[maxLayer] = {5,5,5,5,5}; // number of neurons per layer
 
 string inputfile = "none";      // Input file 
 string paramfile = "none";      // Input parameter files

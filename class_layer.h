@@ -5,7 +5,7 @@
 #include "options_global.h"
 using namespace std;
 
-class NN(){
+class denseLayer(){
   public :
     int n;
     double result;

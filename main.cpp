@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 #include "options_global.h"
+#include "class_NN.h"
+
 using namespace std;
 
 void prtWelcome();
@@ -35,9 +37,12 @@ int main(int argc,char* argv[]){
     readInputfile();
 
 //  2. Build NN
+    NN network;
+    network.build(nLayer,neuPerlayer);
 
 //  3. Print basic informations
     prtWelcome();
+
 
 //  4. Train NN
     
