@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include "options_global.h"
 
 using namespace std;
 
@@ -9,10 +10,10 @@ class NN{
   public :
     int n;
     double result;
-    void build(unsigned short int nl, unsigned short int nL[]);
+    void build();
 };
 
-void NN::build(unsigned short int nlayer, unsigned short int neupLay[]){
-        cout << "build" << endl;
-        cout << nlayer << neupLay[1]<<endl;
-        }
+void NN::build(){
+    cout << "build" << endl;
+    cout << nLayer  << neuPerlayer[1] <<endl;
+}

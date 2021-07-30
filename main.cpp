@@ -12,6 +12,20 @@ void readInputfile();
 string trimStr(string str);
 vector<string>  splitStr(const string& str,const string& delim); 
 
+// Define global variables in header file
+
+
+short unsigned int runType = 1;    // Program run-type 1: Train+inference
+short unsigned int debugLv = 0;    // Debug level
+
+short unsigned int nLayer = 5;     // number of layers
+short unsigned int neuPerlayer[maxLayer] = {5,5,5,5,5}; // number of neurons per layer
+
+string inputfile = "none";      // Input file 
+string paramfile = "none";      // Input parameter files
+
+
+
 /**  
  * The main entrance of this program
  * The common should be organized in CPP style. 
@@ -38,7 +52,7 @@ int main(int argc,char* argv[]){
 
 //  2. Build NN
     NN network;
-    network.build(nLayer,neuPerlayer);
+    network.build();
 
 //  3. Print basic informations
     prtWelcome();
